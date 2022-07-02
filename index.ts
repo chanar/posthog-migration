@@ -156,6 +156,8 @@ const plugin: Plugin<Migrator3000MetaInput> = {
             return
         }
 
+        console.log(events)
+
         await jobs.parseAndSendEvents({ events }).runNow()
     },
 }
